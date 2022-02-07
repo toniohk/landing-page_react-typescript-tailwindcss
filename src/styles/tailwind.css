@@ -13,3 +13,12 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+:root {
+  @apply font-primary;
+}
+
+.gradient-text {
+  background: linear-gradient(207.78deg, #00CDFF 26.14%, #33D1F9 42.89%, #1080BF 81.07%, #1080BF 91.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
