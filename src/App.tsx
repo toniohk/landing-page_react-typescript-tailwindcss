@@ -1,45 +1,250 @@
 import React from 'react';
 
+import logo from './assets/img/vital-logo.png';
+import section_01 from './assets/img/section-01.jpg';
+import section_02 from './assets/img/section-02.jpg';
+import section_03 from './assets/img/section-03.jpg';
+import section_04 from './assets/img/section-04.jpg';
+import section_05 from './assets/img/section-05.jpg';
+import section_06 from './assets/img/section-06.jpg';
+import section_07 from './assets/img/section-07.jpg';
+import section_08_01 from './assets/img/section-08_01.jpg';
+import section_08_02 from './assets/img/section-08_02.jpg';
+import section_08_03 from './assets/img/section-08_03.jpg';
+import section_08_04 from './assets/img/section-08_04.jpg';
+import company_icon_01 from './assets/img/company-icon-01.png';
+import company_icon_02 from './assets/img/company-icon-02.png';
+import company_icon_03 from './assets/img/company-icon-03.png';
+import company_icon_04 from './assets/img/company-icon-04.png';
+import company_icon_05 from './assets/img/company-icon-05.png';
+import company_icon_06 from './assets/img/company-icon-06.png';
+import facebook from './assets/img/icon/facebook.png';
+import twitter from './assets/img/icon/twitter.png';
+import instagram from './assets/img/icon/instagram.png';
+import linkedin from './assets/img/icon/linkedin.png';
+import company from './assets/img/icon/company.png';
+
 function App() {
   return (
-    <div className="flex flex-col h-full items-center justify-center text-white bg-gradient-to-br from-gray-600 via-teal-700 to-gray-800">
-      <div className="flex items-center animate-bounce">
-        <svg viewBox="0 0 64 64" className="w-32 fill-current text-indigo-500">
-          <path d="M52.275 22.147a63.008 63.008 0 0 0-2.025-.637c.112-.462.212-.925.313-1.387 1.537-7.45.524-13.437-2.888-15.412-3.287-1.888-8.65.075-14.075 4.8-.538.462-1.063.95-1.563 1.437-.337-.325-.687-.65-1.037-.962-5.688-5.05-11.387-7.175-14.8-5.188-3.275 1.9-4.25 7.537-2.875 14.587.138.7.288 1.388.463 2.088-.8.224-1.588.474-2.325.737C4.788 24.522 0 28.172 0 31.947c0 3.9 5.1 7.812 12.037 10.187.563.187 1.125.375 1.7.537a45.04 45.04 0 0 0-.5 2.25c-1.312 6.937-.287 12.437 2.988 14.324 3.375 1.95 9.05-.05 14.575-4.887.438-.387.875-.787 1.312-1.212.55.537 1.125 1.05 1.7 1.55 5.35 4.6 10.638 6.462 13.9 4.574 3.375-1.95 4.475-7.862 3.05-15.061a52.467 52.467 0 0 0-.374-1.688c.4-.112.787-.237 1.175-.362C58.775 39.772 64 35.909 64 31.947c0-3.787-4.925-7.462-11.725-9.8zM35.362 11.536c4.65-4.05 8.988-5.638 10.963-4.5 2.112 1.212 2.925 6.112 1.6 12.55a20.19 20.19 0 0 1-.287 1.249 63.994 63.994 0 0 0-8.413-1.325 63.153 63.153 0 0 0-5.325-6.637c.488-.463.962-.9 1.462-1.337zM20.9 38.434a86.067 86.067 0 0 0 1.975 3.237 56.605 56.605 0 0 1-5.8-.937c.55-1.8 1.238-3.662 2.038-5.562a82.583 82.583 0 0 0 1.787 3.262zm-3.787-15.037c1.8-.4 3.712-.725 5.7-.975a73.891 73.891 0 0 0-1.925 3.175 73.904 73.904 0 0 0-1.776 3.25 59.594 59.594 0 0 1-2-5.45zm3.425 8.612a78.537 78.537 0 0 1 2.674-5.074 75.374 75.374 0 0 1 3.05-4.863A78.408 78.408 0 0 1 32 21.86c1.95 0 3.875.075 5.737.212a87.325 87.325 0 0 1 3.038 4.838 85.138 85.138 0 0 1 2.712 5.05 82.936 82.936 0 0 1-2.7 5.1 85.374 85.374 0 0 1-3.024 4.874c-1.863.137-3.8.2-5.763.2-1.962 0-3.863-.063-5.7-.175a76.007 76.007 0 0 1-5.762-9.95zm22.574 6.4a86.342 86.342 0 0 0 1.825-3.337c.8 1.812 1.5 3.65 2.113 5.537-1.938.437-3.9.775-5.875 1a83.722 83.722 0 0 0 1.938-3.2zm1.8-9.562c-.587-1.1-1.187-2.2-1.812-3.275a81.255 81.255 0 0 0-1.913-3.15c2.013.25 3.938.588 5.738 1a55.315 55.315 0 0 1-2.012 5.425zM32.026 14.785a54.888 54.888 0 0 1 3.7 4.475 81.997 81.997 0 0 0-7.438 0 63.146 63.146 0 0 1 3.738-4.475zm-14.5-7.662c2.1-1.225 6.763.525 11.675 4.875.313.275.625.575.95.875a63.504 63.504 0 0 0-5.362 6.637c-2.826.25-5.625.688-8.4 1.3-.163-.637-.3-1.287-.438-1.937-1.175-6.05-.4-10.612 1.575-11.75zm-3.062 32.949a31.894 31.894 0 0 1-1.55-.488c-2.663-.837-5.688-2.162-7.876-3.9a5.609 5.609 0 0 1-2.35-3.737c0-2.287 3.95-5.212 9.65-7.2.713-.25 1.438-.475 2.163-.687a66.462 66.462 0 0 0 3.063 7.95 68.322 68.322 0 0 0-3.1 8.062zM29.038 52.32a22.88 22.88 0 0 1-7.05 4.412 5.533 5.533 0 0 1-4.413.163c-1.987-1.15-2.813-5.563-1.688-11.5.138-.7.288-1.4.463-2.087 2.8.6 5.625 1.012 8.487 1.225a65.963 65.963 0 0 0 5.4 6.674c-.4.388-.8.763-1.2 1.113zm3.062-3.037a59.114 59.114 0 0 1-3.788-4.538c1.2.05 2.438.075 3.688.075 1.288 0 2.55-.025 3.8-.087a53.904 53.904 0 0 1-3.7 4.55zm16.337 3.75a5.555 5.555 0 0 1-2.062 3.912c-1.987 1.15-6.225-.35-10.8-4.275-.525-.45-1.05-.938-1.588-1.438a61.833 61.833 0 0 0 5.276-6.7 61.623 61.623 0 0 0 8.525-1.312c.125.513.237 1.025.337 1.525.612 2.7.712 5.512.313 8.287zm2.276-13.437c-.35.112-.7.225-1.063.325a63.494 63.494 0 0 0-3.188-7.975 63.177 63.177 0 0 0 3.063-7.862c.65.187 1.275.387 1.875.587 5.825 2 9.913 4.975 9.913 7.25 0 2.45-4.363 5.612-10.6 7.675zM32 37.722a5.724 5.724 0 0 0 5.725-5.725A5.724 5.724 0 0 0 32 26.272a5.724 5.724 0 0 0-5.725 5.725A5.724 5.724 0 0 0 32 37.722z" />
-        </svg>
-        <span className="text-6xl pl-5 pr-2">+</span>
-        <svg
-          className="w-32 fill-current text-indigo-500"
-          viewBox="0 0 64 64"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M13.5 11.1C15.3 3.9 19.8.3 27 .3c10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 27.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
-            transform="translate(5 16)"
-          ></path>
-        </svg>
+    <div id="top" className="flex flex-col w-full items-center justify-center bg-white">
+      <div className="flex flex-col md:flex-row items-center justify-center container mt-64 md:mt-98 lg:mt-114 xl:mt-128">
+        <img src={logo} alt="logo" className="h-48 md:h-40 lg:h-58 xl:h-72" />
+        <div className="ml-12 lg:ml-28 xl:ml-44 mt-24 md:mt-0">
+          <p className="text-16 md:text-18 lg:text-24 xl:text-32 font-normal leading-20 md:leading-24 lg:leading-32 xl:leading-42 uppercase gradient-text">The credit card that pays you to</p>
+          <p className="text-16 md:text-18 lg:text-24 xl:text-32 font-normal leading-20 md:leading-24 lg:leading-32 xl:leading-42 uppercase">share and spend responsibly</p>
+        </div>
       </div>
-      <p className="mt-6 tracking-wide">
-        Edit <code>src/App.jsx</code> and save to reload.
-      </p>
-      <div className="mt-4 flex justify-center">
-        <a
-          className="bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <a
-          className="ml-4 bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded"
-          href="https://tailwindcss.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Tailwind
-        </a>
+      <div className="w-full mt-24 lg:mt-30">
+        <img src={section_01} alt="section_01" className="w-full" />
       </div>
+      <div className="md:flex items-start justify-center container mt-12 md:mt-28 lg:mt-52 xl:mt-70">
+        <div className="flex-3">
+          <p className="text-24 lg:text-32 xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase gradient-text">Invite Friends,</p>
+          <p className="text-24 lg:text-32 xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase">Earn Cash Forever</p>
+        </div>
+        <div className="flex-4">
+          <p className="text-20 font-normal font-content text-gray-200 leading-30 lg:leading-36 uppercase">Network as usual using your VITAL  referral link. Earn serious passive income.  Share the link, get points when friends sign up and get approved.</p>
+          <a className="text-16 font-normal font-content text-blue-100 leading-30 lg:leading-36 xl:float-right" href="#top" rel="noreferrer">{'Learn more about referrals >'}</a>
+        </div>
+      </div>
+      <div className="w-full mt-30 md:mt-40 lg:mt-50 xl:mt-60">
+        <img src={section_02} alt="section_02" className="w-full" />
+      </div>
+      <div className="w-full mt-236 relative">
+        <img src={section_03} alt="section_03" className="w-full" />
+        <div className="w-1/2 hidden md:block absolute right-0 top-0 px-0 px-60 lg:px-100 xl:px-140 mt-50 lg:mt-60 xl:mt-100 2xl:mt-200">
+          <p className="text-32 xl:text-42 2xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase gradient-text">Build Better Credit,</p>
+          <p className="text-32 xl:text-42 2xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase">Get Cash</p>
+          <p className="text-20 font-normal font-content text-gray-200 leading-30 lg:leading-36 uppercase">Build your best-ever credit health with personalized tools and updates. As you tone a healthier score, we celebrate your success with cash rewards.</p>
+          <a className="text-16 font-normal font-content text-blue-100 leading-30 lg:leading-36 mt-30" href="#top" rel="noreferrer">{'Learn more about credit rewards >'}</a>
+        </div>
+      </div>
+      <div className="container flex md:hidden flex-col items-start justify-center mt-30">
+        <p className="text-32 xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase gradient-text">Build Better Credit,</p>
+        <p className="text-32 xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase">Get Cash</p>
+        <p className="text-20 font-normal font-content text-gray-200 leading-30 lg:leading-36 uppercase">Build your best-ever credit health with personalized tools and updates. As you tone a healthier score, we celebrate your success with cash rewards.</p>
+        <a className="text-16 font-normal font-content text-blue-100 leading-30 lg:leading-36 mt-30" href="#top" rel="noreferrer">{'Learn more about credit rewards >'}</a>
+      </div>
+      <div className="w-full relative">
+        <img src={section_04} alt="section_04" className="w-full" />
+        <div className="w-1/2 hidden md:block absolute left-0 top-0 px-0 px-60 lg:px-100 xl:px-140 mt-50 lg:mt-60 xl:mt-100 2xl:mt-200">
+          <p className="text-32 xl:text-42 2xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase gradient-text">1.5% Cashback</p>
+          <p className="text-32 xl:text-42 2xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase">on All purchases</p>
+          <p className="text-20 font-normal font-content text-gray-200 leading-30 lg:leading-36 uppercase">Get even more with referrals. Unlock 2% or 3% cashback on a recurring basis with 5 or 10 approved signups during the rewards period. The clock resets every 3 months.</p>
+          <a className="text-16 font-normal font-content text-blue-100 leading-30 lg:leading-36 mt-30" href="#top" rel="noreferrer">{'Learn more about cashback >'}</a>
+        </div>
+      </div>
+      <div className="container flex md:hidden flex-col items-start justify-center mt-30">
+        <p className="text-32 xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase gradient-text">1.5% Cashback</p>
+        <p className="text-32 xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase">on All purchases</p>
+        <p className="text-20 font-normal font-content text-gray-200 leading-30 lg:leading-36 uppercase">Get even more with referrals. Unlock 2% or 3% cashback on a recurring basis with 5 or 10 approved signups during the rewards period. The clock resets every 3 months.</p>
+        <a className="text-16 font-normal font-content text-blue-100 leading-30 lg:leading-36 mt-30" href="#top" rel="noreferrer">{'Learn more about cashback >'}</a>
+      </div>
+      <div className="flex flex-col items-center justify-center container">
+        <div className="flex items-center">
+          <p className="text-24 lg:text-32 xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase gradient-text mr-16">Empowered</p>
+          <p className="text-24 lg:text-32 xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase">finance tracking</p>
+        </div>
+        <p className="text-20 font-normal font-content text-gray-200 leading-30 lg:leading-36 uppercase mt-24">Real-time notifications to review card activity, manage payments, track spending, and more.</p>
+        <a className="text-16 font-normal font-content text-blue-100 leading-30 lg:leading-36 mt-8 mt-30" href="#top" rel="noreferrer">{'Learn more about  finance tracking >'}</a>
+      </div>
+      <div className="w-full mt-50 md:mt-60 lg:mt-80 xl:mt-100">
+        <img src={section_05} alt="section_05" className="w-full" />
+      </div>
+      <div className="w-full relative">
+        <img src={section_06} alt="section_06" className="w-full" />
+        <div className="w-1/2 hidden md:block absolute left-0 top-0 px-0 px-60 lg:px-100 xl:px-140 mt-50 lg:mt-60 xl:mt-100 2xl:mt-200">
+          <p className="text-32 xl:text-42 2xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase gradient-text">Easy digital access </p>
+          <p className="text-32 xl:text-42 2xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase">Fully customized experience</p>
+          <p className="text-20 font-normal font-content text-gray-200 leading-30 lg:leading-36 uppercase">Replace cards Schedule Payments manage notifications personalize credit alerts Freeze Cards And more</p>
+          <a className="text-16 font-normal font-content text-blue-100 leading-30 lg:leading-36 mt-30" href="#top" rel="noreferrer">{'Lear more about digital tools >'}</a>
+        </div>
+      </div>
+      <div className="container flex md:hidden flex-col items-start justify-center mt-30">
+        <p className="text-32 xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase gradient-text">Easy digital access </p>
+        <p className="text-32 xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase">Fully customized experience</p>
+        <p className="text-20 font-normal font-content text-gray-200 leading-30 lg:leading-36 uppercase">Replace cards Schedule Payments manage notifications personalize credit alerts Freeze Cards And more</p>
+        <a className="text-16 font-normal font-content text-blue-100 leading-30 lg:leading-36 mt-30" href="#top" rel="noreferrer">{'Lear more about digital tools >'}</a>
+      </div>
+      <div className="flex flex-col items-center justify-center container">
+        <p className="text-24 lg:text-32 xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase gradient-text mt-24">welcome to your future</p>
+        <p className="text-24 font-normal text-gray-300 leading-32 uppercase mt-8">be there first for all tomorrow has to offer</p>
+      </div>
+      <div className="w-full">
+        <img src={section_07} alt="section_07" className="w-full" />
+      </div>
+      <div className="flex flex-col items-center justify-center container">
+        <p className="text-24 lg:text-32 xl:text-48 font-normal leading-32 lg:leading-42 xl:leading-64 uppercase gradient-text">Access mastercard World Elite</p>
+        <p className="text-24 font-normal text-gray-300 leading-32 uppercase mt-24">VITAL Card gives YOU access to the highest tier</p>
+        <p className="text-24 font-normal text-gray-300 leading-32 uppercase mt-8">of MasterCard’s World Card services:</p>
+      </div>
+      <div className="container mt-50 md:mt-60 lg:mt-80 xl:mt-100 md:grid grid-cols-4 gap-4">
+        <div className="flex flex-col items-center justify-between">
+          <div className="flex justify-start">
+            <div className="w-6 h-14 rounded-md bg-blue-200 my-6 lg:my-10 mr-6" />
+            <p className="text-14 font-normal text-gray-300 leading-30 lg:leading-36 uppercase">zero liability protection</p>
+          </div>
+          <img src={section_08_01} alt="section_08_01" className="w-full mt-20 xl:mt-32" />
+        </div>
+        <div className="flex flex-col items-center justify-between">
+          <div className="flex justify-start">
+            <div className="w-6 h-14 rounded-md bg-blue-200 my-6 lg:my-10 mr-6" />
+            <p className="text-14 font-normal text-gray-300 leading-30 lg:leading-36 uppercase">ID and cell phone protection</p>
+          </div>
+          <img src={section_08_02} alt="section_08_02" className="w-full mt-20 xl:mt-32" />
+        </div>
+        <div className="flex flex-col items-center justify-between">
+          <div className="flex justify-start">
+            <div className="w-6 h-14 rounded-md bg-blue-200 my-6 lg:my-10 mr-6" />
+            <p className="text-14 font-normal text-gray-300 leading-30 lg:leading-36 uppercase">Global emergency services</p>
+          </div>
+          <img src={section_08_03} alt="section_08_03" className="w-full mt-20 xl:mt-32" />
+        </div>
+        <div className="flex flex-col items-center justify-between">
+          <div className="flex justify-start">
+            <div className="w-6 h-14 rounded-md bg-blue-200 my-6 lg:my-10 mr-6" />
+            <p className="text-14 font-normal text-gray-300 leading-30 lg:leading-36 uppercase">Concierge and travel perks</p>
+          </div>
+          <img src={section_08_04} alt="section_08_04" className="w-full mt-20 xl:mt-32" />
+        </div>
+      </div>
+      <div className="hidden xl:flex items-center justify-between container pt-60 lg:pt-80 xl:pt-102 pb-70 lg:pb-86 xl:pb-112">
+        <img src={company_icon_01} alt="company_icon_01" />
+        <img src={company_icon_02} alt="company_icon_02" />
+        <img src={company_icon_03} alt="company_icon_03" />
+        <img src={company_icon_04} alt="company_icon_04" />
+        <img src={company_icon_05} alt="company_icon_05" />
+        <img src={company_icon_06} alt="company_icon_06" />
+      </div>
+      <div className="block xl:hidden flex container pt-60 lg:pt-80 xl:pt-102 pb-70 lg:pb-86 xl:pb-112">
+        <div className="flex">
+          <div className="flex-1 flex items-center justify-center">
+            <img src={company_icon_01} alt="company_icon_01" />
+          </div>
+          <div className="flex-1 flex items-center justify-center">
+            <img src={company_icon_02} alt="company_icon_02" />
+          </div>
+        </div>
+        <div className="flex">
+          <div className="flex-1 flex items-center justify-center">
+            <img src={company_icon_03} alt="company_icon_03" />
+          </div>
+          <div className="flex-1 flex items-center justify-center">
+            <img src={company_icon_04} alt="company_icon_04" />
+          </div>
+        </div>
+        <div className="flex">
+          <div className="flex-1 flex items-center justify-center">
+            <img src={company_icon_05} alt="company_icon_05" />
+          </div>
+          <div className="flex-1 flex items-center justify-center">
+            <img src={company_icon_06} alt="company_icon_06" />
+          </div>
+        </div>
+      </div>
+      <footer className="w-full flex items-center justify-center bg-gray-500 pt-50 pb-66">
+        <div className="lg:flex items-start justify-center container">
+          <div className="flex-2 flex">
+            <div className="flex-1 flex md:hidden lg:flex flex-col">
+              <a className="text-white text-16 font-normal font-content leading-20" href="#top" rel="noreferrer">About</a>
+              <a className="text-white text-16 font-normal font-content leading-20 mt-32" href="#top" rel="noreferrer">Sharing Guide</a>
+              <a className="text-white text-16 font-normal font-content leading-20 mt-32" href="#top" rel="noreferrer">Help Center</a>
+            </div>
+            <div className="flex-1 flex md:hidden lg:flex flex-col">
+              <a className="text-white text-16 font-normal font-content leading-20" href="#top" rel="noreferrer">Terms of Service</a>
+              <a className="text-white text-16 font-normal font-content leading-20 mt-32" href="#top" rel="noreferrer">Privacy Policy</a>
+              <a className="text-white text-16 font-normal font-content leading-20 mt-32" href="#top" rel="noreferrer">Careers</a>
+            </div>
+          </div>
+          <div className="hidden md:flex lg:hidden items-center justify-center">
+            <div className="flex-1 flex flex-col">
+              <a className="text-white text-16 font-normal font-content leading-20" href="#top" rel="noreferrer">About</a>
+              <a className="text-white text-16 font-normal font-content leading-20 mt-32" href="#top" rel="noreferrer">Sharing Guide</a>
+            </div>
+            <div className="flex-1 flex flex-col">
+              <a className="text-white text-16 font-normal font-content leading-20" href="#top" rel="noreferrer">Terms of Service</a>
+              <a className="text-white text-16 font-normal font-content leading-20 mt-32" href="#top" rel="noreferrer">Privacy Policy</a>
+            </div>
+            <div className="flex-1 flex flex-col">
+              <a className="text-white text-16 font-normal font-content leading-20" href="#top" rel="noreferrer">Help Center</a>
+              <a className="text-white text-16 font-normal font-content leading-20 mt-32" href="#top" rel="noreferrer">Careers</a>
+            </div>
+          </div>
+          <div className="flex-3">
+            <div className="md:flex items-start justify-center">
+              <div className="flex-2 flex lg:pr-20 mt-30 lg:mt-0">
+                <div className="flex-1 flex flex-col">
+                  <a className="text-white text-16 font-normal font-content leading-20" href="#top" rel="noreferrer">Customer Support</a>
+                  <a className="text-white text-16 font-normal font-content leading-20 mt-32" href="#top" rel="noreferrer">support@vitalcard.com</a>
+                </div>
+                <div className="flex-1 flex flex-col">
+                  <a className="text-white text-16 font-normal font-content leading-20" href="#top" rel="noreferrer">Media Inquiries</a>
+                  <a className="text-white text-16 font-normal font-content leading-20 mt-32" href="#top" rel="noreferrer">press@vitalcard.com</a>
+                </div>
+              </div>
+              <div className="flex-1 flex items-center justify-start mt-40 lg:mt-0">
+                <a href="#top" rel="noreferrer" className="mr-12"><img src={facebook} alt="facebook-button" /></a>
+                <a href="#top" rel="noreferrer" className="mr-12"><img src={twitter} alt="twitter-button" /></a>
+                <a href="#top" rel="noreferrer" className="mr-12"><img src={instagram} alt="instagram-button" /></a>
+                <a href="#top" rel="noreferrer" className="mr-12"><img src={linkedin} alt="linkedin-button" /></a>
+              </div>
+            </div>
+            <div className="lg:flex items-start justify-center mt-40 lg:mt-50">
+              <div className="flex-2 flex justify-start lg:pr-20">
+                <div className="flex items-center justify-center bg-blue-300 w-24 h-20 rounded-full mr-12">
+                  <img src={company} alt="company" />
+                </div>
+                <p className="text-white text-16 font-normal font-content leading-20">
+                  {'VITAL credit cards are issued by Evolve Bank & Trust, Member FDIC. © 2021 VITAL Card, Inc'}
+                </p>
+              </div>
+              <div className="flex-1 flex justify-start mt-24 lg:mt-0">
+                <p className="text-gray-100 text-12 font-normal font-content leading-16">Copyright © VITAL Card. All Rights Reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
